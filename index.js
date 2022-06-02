@@ -1,10 +1,11 @@
 const Eris = require('eris')
 const keepAlive = require('./server.js')
+const config = require('./config.json');
 keepAlive()
 
-const bot_yisedoiih = new Eris(process.env['yisedoiihh_token'])
-const bot_kanehiza = new Eris(process.env['kanehiza_token'])
-const bot_ganboou = new Eris(process.env['ganboou_token'])
+const bot_yisedoiih = new Eris(config.yisedoiihh_token)
+const bot_kanehiza = new Eris(config.kanehiza_token)
+const bot_ganboou = new Eris(config.ganboou_token)
 
 try { bot_yisedoiih.connect()  
 } catch (e) { console.log('bot yisedoiih off') }
