@@ -1,7 +1,5 @@
 const Eris = require('eris')
-const keepAlive = require('./server.js')
 const config = require('./config.json');
-keepAlive()
 
 const bot_yisedoiih = new Eris(config.yisedoiihh_token)
 const bot_kanehiza = new Eris(config.kanehiza_token)
